@@ -1,0 +1,20 @@
+{
+  "name": "timestamp-flow",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A minimal cross-platform desktop clock with live timestamp",
+  "author": "timestamp_flow",
+  "license": "MIT",
+  "scripts": {
+    "start": "neu run",
+    "dev": "neu run",
+    "icon": "node scripts/make-icon.js",
+    "test": "node --test tests/i18n.test.js tests/zones.test.js tests/search.test.js",
+    "build": "neu build",
+    "dist": "node scripts/package.js"
+  },
+  "devDependencies": {
+    "@neutralinojs/lib": "^6.10.0",
+    "@neutralinojs/neu": "^11.8.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "timestamp-flow-electron-legacy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Archived Electron implementation of Timestamp Flow",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^44.9.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "dev.timestampflow.clock",
+    "productName": "Timestamp Flow",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}

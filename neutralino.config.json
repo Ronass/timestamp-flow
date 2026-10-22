@@ -1,0 +1,54 @@
+{
+  "applicationId": "dev.timestampflow.clock",
+  "version": "1.1.0",
+  "applicationName": "Timestamp Flow",
+  "author": "timestamp_flow",
+  "description": "A minimal cross-platform desktop clock with live timestamp",
+  "copyright": "Copyright (c) 2026 timestamp_flow",
+  "applicationIcon": "resources/icons/appIcon.png",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": false
+  },
+  "nativeAllowList": [
+    "app.*",
+    "window.*",
+    "os.open",
+    "clipboard.writeText",
+    "debug.log"
+  ],
+  "modes": {
+    "window": {
+      "title": "Timestamp Flow",
+      "width": 460,
+      "height": 334,
+      "minWidth": 360,
+      "minHeight": 300,
+      "center": true,
+      "transparent": true,
+      "borderless": true,
+      "resizable": true,
+      "exitProcessOnClose": true,
+      "useSavedState": false,
+      "useLogicalPixels": true,
+      "icon": "/resources/icons/appIcon.png",
+      "enableInspector": false
+    }
+  },
+  "cli": {
+    "binaryName": "timestamp-flow",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "distributionPath": "/dist",
+    "binaryVersion": "6.10.0",
+    "clientVersion": "6.10.0"
+  }
+}
